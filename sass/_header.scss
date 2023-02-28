@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+header .header__logo{
+    width: 250px;
+}
+header .header__official{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    span{
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+}
+header .header__contacts{
+    font-weight: 700;
+    font-size: 18px;
+}
+header .header__phone{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: 0.5s all;
+}
+
+header .header__phone:hover{
+    color: #FFF;
+}
+
+
