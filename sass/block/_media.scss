@@ -1,0 +1,26 @@
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 600px;
+        min-width: 320px;
+    }
+    .image__frame {
+        height: 400px;
+        overflow: hidden;
+        img {
+            object-position: 0 -220px;
+        }
+    }
+    .container {
+        flex-direction: column;
+    }
+    .right__text {
+        margin-top: 10px;
+        font-size: 35px;
+        
+    }
+    .right__social {
+        &-icons {
+            margin-bottom: 25px;
+        }
+    }
+}
