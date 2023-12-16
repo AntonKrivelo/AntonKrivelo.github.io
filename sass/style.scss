@@ -666,7 +666,24 @@ body {
     }
 
 }
-
+@media(max-width: 460px) {
+    .clients__row {
+        display: flex;
+        gap: 0px;
+        img {
+            width: 23%;
+        }
+    }
+}
+@media(max-width: 321px) {
+    .clients__row {
+        display: flex;
+        gap: 0px;
+        img {
+            width: 27%;
+        }
+    }
+}
 
 
 
