@@ -686,7 +686,74 @@ body {
 }
 
 
+// hamburger 
+@media(max-width: 992px) {
+    .menu__list {   
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 80vh; 
+        background-color: rgba(0, 0, 0, 0.8);    
+        transition: 0.8s all;
+        gap: 50px;
+        &_active {
+            left: 0;
+            height: 100%;
+            width: 88%;
+        }   
+        &_item {
+            padding-right: 0;
+        } 
+        .menu__item {
+            font-size: 30px;
+            a {
+                color: #FFF;
+            }
+        }
+    }
+      
+    .hamburger {                              
+        display: block;
+        position: absolute;
+        right: 19px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px; 
+        height: 12px;
+        cursor: pointer;
+        span {
+            transition: 0.8s all;
+            display: block;
+            width: 36px;
+            height: 4px;
+            background-color: #000000;
+            margin-bottom: 4px;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+            }
+                
+                    
+        }
+    }
+}
 
+// end hamburger
 
 
 
@@ -755,6 +822,9 @@ body {
     display: block;
 }
 
+.active {
+    display: block;
+}
 // end modal
 
 

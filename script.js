@@ -2,7 +2,27 @@
 const btnModal = document.querySelectorAll('[data-modal]');
 const modalPage = document.querySelector('.overlay');
 const closeModal = document.querySelector('[data-close]');
+const menu = document.querySelector('.menu__list');
+const hamburger = document.querySelector('.hamburger');
+const menuItem = document.querySelectorAll('.menu__item');
 
+//hamburger 
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('hamburger_active');
+    menu.classList.toggle('menu__list_active');
+});
+
+menuItem.forEach(item => {
+    item.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu__list_active');
+    })
+})
+// end hamburger
+
+
+
+// modal
 btnModal.forEach((btn) => {                // метод перебора всех кнопок 
     btn.addEventListener('click', () => {
         modalPage.classList.add('show');
