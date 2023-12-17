@@ -718,7 +718,7 @@ body {
     .form-btn {
         transform: translateX(-100%);
         width: 117px;
-        height: 58px;
+        height: 59px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         background-color: #FF7B47;
@@ -886,25 +886,25 @@ body {
     position: absolute;
     top: 1%;
     right: 4%;
-    font-size: 35px;
+    font-size: 45px;
     cursor: pointer;
    }
    .modal__title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     padding-bottom: 30px;
    }
    .modal__input {
     width: 250px;
-    height: 30px;
+    height: 39px;
     padding: 5px;
-    background-color: rgba(198, 206, 206, 0.89);
+    background-color: #FFF;
     color: #FFF;
     border-radius: 5px;
    }
    .btn {
     width: 250px;
-    height: 30px;
+    height: 39px;
     border-radius: 5px;
    }
 }
