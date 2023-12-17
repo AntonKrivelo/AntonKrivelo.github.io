@@ -677,7 +677,7 @@ body {
 @media(max-width: 460px) {
     .clients__row {
         display: flex;
-        gap: 0px;
+        gap: 30px;
         img {
             width: 23%;
         }
@@ -686,9 +686,9 @@ body {
 @media(max-width: 321px) {
     .clients__row {
         display: flex;
-        gap: 0px;
+        gap: 30px;
         img {
-            width: 27%;
+            width: 23%;
         }
     }
 }
@@ -764,20 +764,24 @@ body {
 @media(max-width: 450px) {
     .feed-form {
         .form-email {
+            height: 40px;
             width: 200px;
         }
     .form-btn {
         width: 85px;
+        height: 40px;
     }
 }
 }
 @media(max-width: 350px) {
     .feed-form {
         .form-email {
+            height: 35px;
             width: 150px;
         }
     .form-btn {
         width: 85px;
+        height: 35px;
     }
 }
 }
