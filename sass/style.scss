@@ -317,14 +317,17 @@ body {
     letter-spacing: 0.1px;
     padding-top: 30px;
     margin-top: 10px;
+    text-align: center;
 }
 .designer__subtitle {
     color: #737373;
     margin-top: 20px;
     letter-spacing: 0.2px;
+    text-align: center;
 }
 .designer__subtitle-centre {
     color: #737373;
+    text-align: center;
 }
 .designer__row {
     display: flex;
@@ -441,7 +444,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 35px;
+    padding: 30px;
     background-color: #FFF;
     box-shadow: 4px -3px 63px 24px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
@@ -786,6 +789,89 @@ body {
     }
 }
 }
+
+.support__page {
+    background-color: #E6E6E6;
+}
+.support__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 80px;
+}
+.support__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 80px 0;
+}
+.support__cards {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    background-color: #FFF;
+    transition: 0.7s all;
+    border-radius: 5px;
+    &:hover {
+        background-color: #252B42;
+        padding: 80px 40px;
+        color: #FFF;
+        border-color: #FFF;
+        .support__cards-btn {
+            color: #FFF;
+            border-color: #FFF;
+        }
+    }
+    .support__cards-img {
+        width: 72px;
+        height: 72px;
+    }
+    .support__cards-mail {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .support__cards-subheader {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .support__cards-btn {
+        cursor: pointer;
+        color: #FF7B47;
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid #FF7B47;
+        padding: 15px 20px;
+        border-radius: 5px;
+    }
+
+}
+@media(max-width: 845px) {
+    .support__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 80px 0;
+    }
+}
+@media(max-width: 495px) {
+    .trusted__subtitle {
+        font-size: 12px;
+    }
+    .trusted__subtitle-centre {
+        font-size: 12px;
+    }
+}
+
+
+
 
 // hamburger 
 @media(max-width: 992px) {
