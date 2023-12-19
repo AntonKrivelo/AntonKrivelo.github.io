@@ -801,9 +801,24 @@ body {
     gap: 10px;
     padding-top: 80px;
 }
+// .offer__slider-prev {
+//     cursor: pointer;
+    
+// }
+// .offer__slider-next {
+//     cursor: pointer;
+    
+// }
+
+// .slider__arrows {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
 .support__row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
     padding: 80px 0;
@@ -869,9 +884,99 @@ body {
         font-size: 12px;
     }
 }
+@media(max-width: 422px) {
+    .trusted__subtitle {
+        font-size: 10px;
+    }
+    .trusted__subtitle-centre {
+        font-size: 10px;
+    }
+}
+
+.consulting__block-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.consulting__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.consulting__title {
+    font-size: 25px;
+    font-weight: 800;
+}
+.consulting__subtext {
+    color: #737373;
+    font-size: 12px;
+}
+.consulting__btn {
+    cursor: pointer;
+    background-color: #FF7B47;
+    color: #FFF;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+}
 
 
+.footer {
+    background-color: #17213C;
+}
+.footer__info {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.company__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #FFF;
+}
+.info__title {
+    color: #FFF;
+    font-weight: 800;
+}
+.info__item {
+    padding-top: 20px;
+    a {
+        color: #FFF;
+    }
+}
 
+.company__social {
+    display: flex;
+    flex-direction: column;
+    a {
+        color: #FFF;
+    }
+.info__item-social{
+    padding-top: 20px;
+}    
+    
+}
+
+@media (max-width: 700px) {
+    .footer__info {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .info__title {
+        color: #FFF;
+        font-weight: 800;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 560px) { 
+    .footer__info {
+        
+        flex-direction: column;
+        
+    }
+}
 
 // hamburger 
 @media(max-width: 992px) {

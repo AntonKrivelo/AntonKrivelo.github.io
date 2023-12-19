@@ -47,8 +47,11 @@ modalPage.addEventListener('click' , (e) => {
     }
 });
 hideModal();
-
 // end modal
+
+
+
+
 
 
 
